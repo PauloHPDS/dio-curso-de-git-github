@@ -1,0 +1,22 @@
+Restaurar
+>git restore "nome do arquivo"
+
+alterar menssagem ultimo commit
+>git commit --amend -m"nova mensagem"
+
+ou
+
+>git commit --amend 
+(abre o editor)
+
+Desfazer ultimo commit -git reset-
+>git reset --soft "codigo referente ao commit"
+(volta ao comiit referenciado, com as mesmas mudanças do commit revertido)
+
+>git reset --mixed "codigo referente ao commit"
+(desfaz o último commit, remove as alterações do
+ índice, mas mantém as alterações no arquivo no diretório de trabalho)
+
+>git reset --hard "codigo referente ao commit"
+(Além de retornar ao comiit selecionado ele descarta todos os arquivos 
+staged bem como os arquivos unstaged)
